@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-component-zjpe
+  namespace: build-e2e-elge-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:172d00219f2b5817b74fa4686d59bd025de6cee0a96e22d09b0f93ed524f7a4f
+        name: my-python
+        resources: {}
+status: {}
