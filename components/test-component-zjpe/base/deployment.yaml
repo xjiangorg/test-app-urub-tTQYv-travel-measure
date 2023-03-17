@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: test-component-zjpe
     spec:
       containers:
-      - image: quay.io/redhat-appstudio-qe/test-images:d33f40690b044896bd57d61d4ac0b4be
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:172d00219f2b5817b74fa4686d59bd025de6cee0a96e22d09b0f93ed524f7a4f
         name: my-python
         ports:
         - containerPort: 8081
